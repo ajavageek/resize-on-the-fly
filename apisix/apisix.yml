@@ -8,7 +8,7 @@ routes:
       proxy-rewrite:
         regex_uri:
           - /resize/(.*)/(.*)
-          - /rs:fill/w:$1/plain/http://server:3000/$2
+          - /rs:fill/w:$1/plain/http://server:3000/$2@webp
     upstream:
       nodes:
         "imgproxy:8080": 1
